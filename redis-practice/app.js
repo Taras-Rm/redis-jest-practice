@@ -9,6 +9,6 @@ const app = express();
 // cache middleware
 app.use(cacheRequestMiddleware);
 
-app.get("/users", getUsers);
+app.get("/api/users", getUsers);
 
 export default app;

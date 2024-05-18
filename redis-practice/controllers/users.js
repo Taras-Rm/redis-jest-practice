@@ -1,6 +1,7 @@
 import axios from "axios";
 import path from "path";
 import { generateRequestCacheKey } from "../redis/helper.js";
+import redisClient from "../redis/connection.js";
 
 const getUsers = async (req, res) => {
   try {
